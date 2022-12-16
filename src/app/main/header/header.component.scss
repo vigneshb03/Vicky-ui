@@ -1,0 +1,32 @@
+.navbar
+{
+    background-color: rgb(26, 24, 24);
+    max-height: 55px;
+    color: white;
+
+}
+.nav
+{
+    li{
+        margin-left: 30px;
+
+    }
+}
+.menu{
+    transform: rotate(90deg);
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    background-color:rgb(26, 24, 24) ;
+    border: none;
+}
+
+.img
+{
+    height: 25px;
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+    outline: red;
+    cursor: pointer;
+}

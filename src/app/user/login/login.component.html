@@ -1,0 +1,37 @@
+<div class="login-container">
+<div class="box">
+  <div class="form">
+    <form [formGroup]="Login" (ngSubmit)="loginSubmit()">
+      <h2>Sign In</h2>
+      <div class="inputBox">
+        <input type="email" required="required" formControlName="username"  >
+        <span>Username</span>
+        <i class="i"></i>
+
+      </div>
+      <div class="errors">
+        <span *ngIf="errorMsg">Enter valid email *</span>
+      </div>
+      <div class="inputBox">
+        <input type="password" required="required" formControlName="password">
+        <span>Password</span>
+        <i class="i"></i>
+        <i class="fas fa-eye" ></i>
+          <i class="fas fa-eye-slash" ></i>
+      </div>
+      <div class="errors">
+        <span *ngIf="errorMsg">Enter valid password *</span>
+      </div>
+      <div class="links">
+        <a href="javascript:void(0)" routerLink="forgot">Forgot Passsword</a>
+        <a href="javascript:void(0)" routerLink="signup">Sign Up</a>
+      </div>
+      <input type="submit"  class="login-button" value="Login">
+    </form>
+  </div>
+</div>
+</div>
+<div class="noti" *ngIf="valid_Msg">
+  <p>{{validMsg}}
+  </p>
+</div>

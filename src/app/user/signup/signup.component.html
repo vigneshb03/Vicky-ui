@@ -1,0 +1,35 @@
+<div class="login-container">
+  <div class="box">
+    <div class="form">
+      <h2>Sign Up</h2>
+      <form [formGroup]="registerForm" (ngSubmit)="submitForm()" >
+      <div class="inputBox">
+          <input type="text"  required="required" formControlName="username">
+          <span>Username</span>
+          <i class="i"></i>
+
+        </div>
+        <div class="inputBox">
+          <input type="email"  required="required" formControlName="email">
+          <span>Email</span>
+          <i class="i"></i>
+        </div>
+        <div class="inputBox">
+          <input type="password"  required="required"formControlName="password">
+          <span>Password</span>
+          <i class="i"></i>
+          <i class="fas fa-eye" *ngIf="eye" (click)="showpassword()"></i>
+          <i class="fas fa-eye-slash" *ngIf="eyeSlash" (click)=" hidepassword()"></i>
+
+
+        </div>
+
+        <input type="submit" class="login-button" value="Signup">
+      </form>
+        <div class="links">
+          <a href="javascript:void(0)" routerLink="">Back to login </a>
+        </div>
+
+    </div>
+  </div>
+  </div>
