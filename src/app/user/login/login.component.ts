@@ -43,15 +43,18 @@ this.service.postRegister(this.Login.value).subscribe(res =>{
     {
       if(!this.Login.valid)
       {
-        this.validMsg='usename and password is Invalid!!!'
+        this.validMsg='usename and password is Invalid!!!';
         this.valid_Msg = true;
         setTimeout(()=>{
           this.valid_Msg = false;
         },3000)
       }
-
     }
   })}
+
+checkSignup(){
+
+}
   hidepassword()
   {
 

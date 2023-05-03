@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FitnessComponent } from '../fitness/fitness/fitness.component';
 import { ForgotComponent } from './forgot/forgot.component';
 import { LoginComponent } from './login/login.component';
 import { OtpComponent } from './otp/otp.component';
@@ -10,7 +11,7 @@ const userRoutes: Routes = [
   {path:'forgot',component:ForgotComponent},
   {path:'signup',component:SignupComponent},
   {path:'otp',component:OtpComponent},
-  {path:'main',loadChildren:()=>import('../main/main.module').then(m=>m.MainModule)}
+  {path:'fitness',component:FitnessComponent}
 ];
 
 @NgModule({

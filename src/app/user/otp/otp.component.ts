@@ -36,7 +36,7 @@ return this.userService.otpGen(this.otpLoginForm.value)
   this.responseData = res;
   if(this.otpLoginForm.valid)
   {
-    this.router.navigate(['main'])
+    this.router.navigate(['fitness'])
   }
   else{
     alert("invalid otp");

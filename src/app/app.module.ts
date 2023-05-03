@@ -8,9 +8,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FitnessComponent } from './fitness/fitness/fitness.component';
 @NgModule({
   declarations: [
     AppComponent,
+    FitnessComponent,
 
   ],
   imports: [
